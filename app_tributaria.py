@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-
+from src.utils.read_excel import read_file
 
 st.markdown("TITULO")
 
@@ -11,5 +11,5 @@ uploaded_file = st.sidebar.file_uploader("Arrastra o escoge un archivo")
 
 if uploaded_file is not None:
 
-    dataframe = pd.read_excel(uploaded_file)
-    st.sidebar.write(dataframe)
+    df = read_file(uploaded_file)
+    st.sidebar.write(df)
