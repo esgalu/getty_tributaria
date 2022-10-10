@@ -1,0 +1,7 @@
+# Files
+*.xlsx
+*.ipynb
+
+# Folders
+*venv
+*.idea
